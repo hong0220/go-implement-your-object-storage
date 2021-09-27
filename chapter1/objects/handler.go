@@ -12,5 +12,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		get(w, r)
 		return
 	}
+
+	// 错误响应，不允许
 	w.WriteHeader(http.StatusMethodNotAllowed)
 }
